@@ -1,4 +1,9 @@
 indexer_demo
 ============
 
-For use as a demo for rails
+Demo app for ru-findit
+
+bundle install
+rails c
+Document.index_all!
+Document.search 'cat'
