@@ -4,6 +4,6 @@ indexer_demo
 Demo app for ru-findit
 
 bundle install <br/>
-rails c
-Document.index_all!
-Document.search 'cat'
+rails c <br/>
+Document.index_all!  <br/>
+Document.search 'cat' <br/>
