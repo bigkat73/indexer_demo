@@ -1,0 +1,120 @@
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (1.6ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.8ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateDocuments (20121017162443)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateDocuments (20121017162443)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "documents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "body" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121017162443')[0m
+  [1m[35m (3.5ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("documents")[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (7.0ms)[0m  [1mINSERT INTO "documents" ("body", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "The cat went here and there\n    and the moon spun round like a top,\n    and the nearest kin of the moon,\n    the creeping cat, looked up.\n    Black Minnaloushe stared at the moon,\n    for, wander and wail as he would,\n    the pure cold light in the sky\n    troubled his animal blood.\n\n    Minnaloushe runs in the grass\n    lifting his delicate feet.\n    Do you dance, Minnaloushe, do you dance?\n    When two close kindred meet,\n    what better than call a dance?\n    Maybe the moon may learn,\n    tired of that courtly fashion,\n    a new dance turn.\n\n    Minnaloushe creeps through the grass\n    from moonlit place to place,\n    the sacred moon overhead\n    has taken a new phase.\n    Does Minnaloushe know that his pupils\n    will pass from change to change,\n    and that from round to crescent,\n    from crescent to round they range?\n\n    Minnaloushe creeps through the grass\n    alone, important and wise,\n    and lifts to the changing moon\n    his changing eyes"], ["created_at", Wed, 17 Oct 2012 16:43:39 UTC +00:00], ["name", "test1"], ["updated_at", Wed, 17 Oct 2012 16:43:39 UTC +00:00]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "documents" ("body", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["body", "A poets cat, sedate and grave,\n    as poet would wish to have,\n    was much addicted to enquire,\n    for nooks to which she might retire,\n    and where, secure as mouse in chink,\n    she might repose, or sit and think.\n    I know not where she caught her trick,\n    nature perhaps herself had cast her,\n    in such a mold philosophique,\n    or else she learnd it of her master.\n    Sometimes ascending, debonair,\n    an apple tree or lofty pear,\n    lodgd with convenience in the fork,\n    she watched the gardner at his work;\n    sometimes her ease and solace sought,\n    in an old empty watring pot,\n    there wanting nothing, save a fan,\n    to seem some nymph in her sedan,\n    apparelld in exactest sort,\n    and ready to be borne in court."], ["created_at", Wed, 17 Oct 2012 16:43:39 UTC +00:00], ["name", "test2"], ["updated_at", Wed, 17 Oct 2012 16:43:39 UTC +00:00]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "documents" ("body", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "Its a dog eat dog world, a dog eat dog world, a dog eat dog eat dog eat dog world.\n    Live like a dog die like a dog, as the old saying goes,\n    The plant you water is the plant that grows, everybody knows,\n    Give blows, get blows\n    Downs how the water flows\n    Live like a dog die like a dog\n    Its a dog eat dog eat dog eat dog world."], ["created_at", Wed, 17 Oct 2012 16:43:39 UTC +00:00], ["name", "test3"], ["updated_at", Wed, 17 Oct 2012 16:43:39 UTC +00:00]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "documents" ("body", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["body", "Dog stay and dog stays\n    Dog run and dog runs\n    Dog stand and dog stands\n\n    Dog catch and dog catches\n    Dog roll and dog rolls\n    Dog lick and dog licks\n    Dog hug and dog hugs\n\n\n    You are indeed a liberated woman\n    I dont have to ask if that dog is your man. "], ["created_at", Wed, 17 Oct 2012 16:43:39 UTC +00:00], ["name", "test4"], ["updated_at", Wed, 17 Oct 2012 16:43:39 UTC +00:00]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "documents" ("body", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "Cat sleep anywhere, any table, any chair.\n    Top of piano, window-ledge, in the middle, on the edge.\n    Open draw, empty shoe, anybodys lap will do.\n    Fitted in a cardboard box, in the cupboard with your frocks.\n    Anywhere! They dont care! Cat sleep anywhere."], ["created_at", Wed, 17 Oct 2012 16:43:39 UTC +00:00], ["name", "test5"], ["updated_at", Wed, 17 Oct 2012 16:43:39 UTC +00:00]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "documents" ("body", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["body", "I only have a group of three,\n    me, my dog, my dog and me\n\n    Its a lonely way to be,\n    me, my dog, my dog and me\n\n    We are a safe with no key,\n    me, my dog, my dog and me\n\n    Three to talk to two to see,\n    me, my dog, my dog, and me\n    "], ["created_at", Wed, 17 Oct 2012 16:43:39 UTC +00:00], ["name", "test6"], ["updated_at", Wed, 17 Oct 2012 16:43:39 UTC +00:00]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "documents" ("body", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "A sweet baby girl came home today\n    And ahh, you should have heard the people say,\n    Now isnt she just the most beautiful child,\n    With that pretty long hair and that sweet little ..........\n\n    Source: Baby Poems - New Baby Poems http://www.familyfriendpoems.com/family/baby-poems.asp#ixzz29ZhoXFol\n    www.FamilyFriendPoems.com"], ["created_at", Wed, 17 Oct 2012 16:43:39 UTC +00:00], ["name", "test7"], ["updated_at", Wed, 17 Oct 2012 16:43:39 UTC +00:00]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "documents" ("body", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["body", "baby, baby, baby....justin bieber"], ["created_at", Wed, 17 Oct 2012 16:43:39 UTC +00:00], ["name", "test8"], ["updated_at", Wed, 17 Oct 2012 16:43:39 UTC +00:00]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "documents" ("body", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "Brat of a cat,\n    Where are you now?\n    Never a sign or an answering yeow;\n    Not in the garden, not in your bed,\n    Though its five oclock and time to be fed -\n    Brat of a curious cat\n\n    Brat of a cat,\n    I heard today\n    Theres a conference on just over the way,\n    With the local toms all having their say;\n    So thats, I guess, where you go all day -\n    Brat of a vagrant cat."], ["created_at", Wed, 17 Oct 2012 16:43:39 UTC +00:00], ["name", "test9"], ["updated_at", Wed, 17 Oct 2012 16:43:39 UTC +00:00]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "documents" ("body", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["body", "by Robert Louis Stevenson\n\n    Dark brown is the river,\n    Golden is the sand\n    It flows along forever,\n    With trees on either hand.\n\n    Green leaves a-floating,\n    Castles of the foam,\n    Boats of mine a-boating\n    Where with all come home?\n\n    On goes the river\n    And out past the mill,\n    Away down the valley,\n    Away down the hill.\n\n    Away down the river,\n    A hundred miles or more,\n    Other little children\n    Shall bring my boats ashore."], ["created_at", Wed, 17 Oct 2012 16:43:39 UTC +00:00], ["name", "test10"], ["updated_at", Wed, 17 Oct 2012 16:43:39 UTC +00:00]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "documents" ("body", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "Michael row de boat ashore, Hallelujah!\n    Michael boat a gospel boat, Hallelujah!\n    I wonder where my mudder deh (there).\n    See my mudder on de rock gwine home.\n    On de rock gwine home in Jesus name.\n    Michael boat a music boat.\n    Gabriel blow de trumpet horn.\n    O you mind your boastin talk.\n    Boastin talk will sink your soul.\n    Brudder, lend a helpin hand.\n    Sister, help for trim dat boat.\n    Jordan stream is wide and deep.\n    Jesus stand on t oder side.\n    I wonder if my maussa deh.\n    My fader gone to unknown land.\n    O de Lord he plant his garden deh.\n    He raise de fruit for you to eat.\n    He dat eat shall neber die.\n    When de riber overflow.\n    O poor sinner, how you land?\n    Riber run and darkness comin.\n    Sinner row to save your soul."], ["created_at", Wed, 17 Oct 2012 16:43:39 UTC +00:00], ["name", "test11"], ["updated_at", Wed, 17 Oct 2012 16:43:39 UTC +00:00]]
+  [1m[35m (1.1ms)[0m  commit transaction
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
