@@ -22,7 +22,8 @@ end
 
 gem 'jquery-rails'
 
-gem 'ru_findit', path: '/Users/fredkatona/Documents/projects/ru-findit'
+gem 'ru_findit', :git => 'git@github.com:bigkat73/ru-findit.git'
+#path: '/Users/fredkatona/Documents/projects/ru-findit'
     #:git => 'git@github.com:bigkat73/ru-findit.git',
     #              :branch => 'active_record_hooks'
 

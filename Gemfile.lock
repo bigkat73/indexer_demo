@@ -1,5 +1,6 @@
-PATH
-  remote: /Users/fredkatona/Documents/projects/ru-findit
+GIT
+  remote: git@github.com:bigkat73/ru-findit.git
+  revision: 655d8f7882bbf15f8e6265871320d0c70a324a19
   specs:
     ru_findit (0.0.1)
       activesupport
